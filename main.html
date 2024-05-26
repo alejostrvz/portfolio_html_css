@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="main.css"> <!-- etiqueta link para enlazar los estilos(css) con el html -->
+</head>
+<body>
+    <header class="hero">
+        <div class="container"> <!-- Contenedor que contiene el titulo y botones de contacto-->
+            <h1>Alejandro Estrada 
+                <br> Desarrollador Backend <!-- Uso de etiqueta br para el salto de linea -->
+            </h1> <!-- Titulo -->
+            <div class="buttons"> <!-- contenedor de los butones -->
+                <a href="#about" class="btn">Sobre Mi</a> 
+                <a href="#contact" class="btn">Contactame</a>
+            </div>
+        </div>
+    </header>
+    <section class="about" id="about"> <!-- Section para separar la seccion de about me -->
+        <div class="container">
+            <h2>Sobre <span>Mi</span></h2><!-- etiqueta h2 para titulo y etiqueta span para dar estilo -->
+            <p>Soy Desarrollador Backend, actualmente estudiante de Ingenieria en Sistemas de Informacion y Ciencias de la Computacion</p> <!-- etiqueta p para agregar texto -->
+            <div class="profile"> <!-- contenedor div para mejor manejo de las etiquetas y estilo -->
+                <img src="fotodeperfil.jpg" alt="Profile Picture"> <!-- etiqueta img para agregar imagenes -->
+                <div class="details">
+                    <h3>Hola, Soy Alejandro Estrada</h3>
+                    <p>Soy Desarrollador Backend con Python y Golang</p>
+                    <ul> <!-- etiqueta ul para hacer una lista sobre mi -->
+                        <li>Nombre: Alejandro Estrada</li> <!-- etiqueta li para elemento de la lista -->
+                        <li>Edad: 21</li>
+                        <li>Direccion: Guatemala, Ciudad de Guatemala</li>
+                        <li>Numero de Telefono: +502 0000-0000</li>
+                        <li>Correo Electronico: alestrvz03@gmail.com</li>
+                    </ul>
+                    <a href="CVAlejandroEstrada .pdf" class="btn" download="CVAlejandroEstrada">Download CV</a> <!-- etiqueta a para hacer un boton con un enlace de descarga para cv -->
+                </div>          
+            </div>
+        </div>
+        <div class="container">
+            <table class="info-table">
+                <tr>
+                    <th>Educacion</th>
+                    <th>Metas Profesionales</th>
+                    <th>Idiomas</th>
+                </tr>
+                <tr>
+                    <td>Bachillerato en Ciencias y Letras(2021-2022)</td>
+                    <td>Convertirme en Ingeniero en Sistemas</td>
+                    <td>Español</td>
+                </tr>
+                <tr>
+                    <td>Estudiante de Ingenieria en Sistemas de Informacion y Ciencias de la Computacion(2024-2029)</td>
+                    <td>Liderar un equipo de desarrollo</td>
+                    <td>Ingles(conversacional)</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section class="services">
+        <div class="container">
+            <h2>Servicios que <span>Ofresco</span></h2>
+            <p>
+                Desarrollo de APIs RESTful con lenguajes como Python y Go con frameworks como Django, FastAPI, Gin, Integracion de Bases de Datos(PostgreSQL, MySQL, MongoDB),
+                Automatizacion de Tareas, Desarrollo de Microservicios utilizando FastAPI y Go, Desarrollo de Aplicaciones Web y Mantenimiento de Codigo.
+            </p>
+        </div>
+    </section>
+    <section class="project">
+        <div class="container">
+            <h2>Proyecto<span> Ecommerce</span></h2>
+            <div class="project-content">
+                <a href="https://github.com/alejostrvz/Ecommerce-with-Django-and-Payments-with-Paypal" target="_blank"><img src="EcommerceProject.jpeg" alt="eCommerce Project"></a>
+                <div class="project-description">
+                    <p>En este proyecto se construyo un Ecommerce que acepte pagos via PayPal utilizando las tecnologias de Python con el Framework Django, el proyecto contaba  con las siguientes caracteristicas: Registro de usuario, Inicio de sesion, Confirmacion de correo electronico con tokens via correo electronico, Pagos en linea con PayPal, Cierre de sesion, autenticaciones, carrito de compra, lista de deseos etc.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contacta<span>me</span></h2>
+            <form action="https://formspree.io/f/mwkgjoya" method="POST" id="form" class="form">
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar Mensaje</button>
+            </form>
+            <script src="formdata.js"></script>
+        </div>
+    </section>
+    <footer>
+        <ul class="social-media">
+            <li><a href="https://www.linkedin.com/in/alejandro-estrada/" target="_blank"><img src="Linkedinlogo.png" alt="LinkedIn"></a></li>
+            <li><a href="https://github.com/alejostrvz" target="_blank"><img src="githublogo.png" alt="GitHub"></a></li>
+        </ul>
+    </footer>
+    <div id="toast" class="toast">Formulario enviado con éxito</div>
+</body>
+</html>
